@@ -62,7 +62,7 @@ class LocationPicker extends Component {
     const location = {
       position,
       places,
-      address: places.length > 0 ? places[0].formatted_address : ''
+      address: places.length > 0 ? places[0] : undefined
     };
     onChange && onChange(location);
   }
